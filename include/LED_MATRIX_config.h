@@ -1,0 +1,26 @@
+
+#ifndef LED_MATRIX_CONFIG_H_
+#define LED_MATRIX_CONFIG_H_
+
+
+#define LEDMRX_ROW_0_PIN    GPIOA,0
+#define LEDMRX_ROW_1_PIN    GPIOA,1
+#define LEDMRX_ROW_2_PIN    GPIOA,2
+#define LEDMRX_ROW_3_PIN    GPIOA,3
+#define LEDMRX_ROW_4_PIN    GPIOA,4
+#define LEDMRX_ROW_5_PIN    GPIOA,5
+#define LEDMRX_ROW_6_PIN    GPIOA,6
+#define LEDMRX_ROW_7_PIN    GPIOA,7
+
+#define LEDMRX_COL_0_PIN    GPIOB , 8
+#define LEDMRX_COL_1_PIN    GPIOB , 9
+#define LEDMRX_COL_2_PIN    GPIOB , 10
+#define LEDMRX_COL_3_PIN    GPIOB , 11
+#define LEDMRX_COL_4_PIN    GPIOB , 12
+#define LEDMRX_COL_5_PIN    GPIOB , 13
+#define LEDMRX_COL_6_PIN    GPIOB , 14
+#define LEDMRX_COL_7_PIN    GPIOB , 15
+
+
+
+#endif /* LED_MATRIX_CONFIG_H_ */
