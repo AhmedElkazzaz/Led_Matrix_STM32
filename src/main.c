@@ -35,14 +35,14 @@
 #include <LED_MATRIX_interface.h>
 #include "diag/Trace.h"
 
-void shiftArrayLeft(u8 *array)
+void shiftArrayLeft(u8 *array,u8 size)
 {
 
 	        u8 i, first;
 	        //Stores the first element of the array
 	        first = array[0];
 
-	        for(i = 0; i <29; i++)
+	        for(i = 0; i <size-1; i++)
 	        {
 	            //Shift element of array by one
 	        	array[i] = array[i+1];
@@ -73,7 +73,7 @@ void main (void)
 		  {
 			 dataDisplay[j]=nameArray[j];
 		  }
-		  shiftArrayLeft(nameArray);
+		  shiftArrayLeft(nameArray,30);
 		  //display every character for around one second then shift
 	  	  for(int c=0;c<62;c++)
 	 		LEDMRX_voidDisplay(dataDisplay);
